@@ -21,6 +21,16 @@
     android:title="@string/buttons_title" >
 
     <PreferenceCategory
+        android:key="volume_button_category"
+        android:title="@string/volume_button_category_title" />
+
+        <Preference
+            android:key="vol_steps"
+            android:title="@string/volume_steps_fragment_title"
+            android:summary="@string/volume_steps_summary"
+            android:fragment="com.derpquest.settings.buttons.VolumeStepsFragment" />
+
+    <PreferenceCategory
         android:key="power_button"
         android:title="@string/power_button_category">
 
