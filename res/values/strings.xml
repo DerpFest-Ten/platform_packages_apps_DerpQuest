@@ -37,7 +37,6 @@
     <string name="systemui_restart_title">SystemUI restart required</string>
     <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
 
-
     <!--DerpQuest statusbar-->
     <string name="statusbar_bar_title">Statusbar</string>
     <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
@@ -170,7 +169,6 @@
     <string name="show_carrier_statusbar">Status bar</string>
     <string name="show_carrier_enabled">Both</string>
 
-
     <!--DerpQuest Notification-->
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
@@ -237,7 +235,6 @@
     <string name="qs_vibrate_title">Vibrate on touch</string>
     <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
 
-
     <!--DerpQuest navigation-->
     <string name="navigation_category">Navigation</string>
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
@@ -275,11 +272,9 @@
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
 
-
     <!--DerpQuest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
-
 
     <!--DerpQuest Gestures-->
     <string name="gesture_category">Gesture</string>
@@ -410,10 +405,13 @@
     <string name="ambient_visualizer_title">Ambient visualizer</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
 
-
     <!--DerpQuest advanced-->
     <string name="advanced_title">Advanced Settings</string>
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
+
+    <!-- Bluetooth battery status --> 
+    <string name="bluetooth_battery_title">Bluetooth battery status</string>
+    <string name="bluetooth_battery_summary">Display battery level for the connected bluetooth device, if available</string>
 
 </resources>
