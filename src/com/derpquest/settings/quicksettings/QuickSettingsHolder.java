@@ -19,11 +19,15 @@ package com.derpquest.settings.quicksettings;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.UserHandle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -62,6 +66,8 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_CUSTOM_HEADER = "status_bar_custom_header";
     private static final String FILE_HEADER_SELECT = "file_header_select";
     private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
+    private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
+    private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
 
     private static final int REQUEST_PICK_IMAGE = 0;
 
@@ -79,6 +85,8 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mQsColumnsPort;
     private CustomSeekBarPreference mQsColumnsLand;
     private ListPreference mQuickPulldown;
+    private ListPreference mTileAnimationStyle;
+    private ListPreference mTileAnimationDuration;
 
     @Override
     public int getMetricsCategory() {
@@ -121,6 +129,21 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
         mQuickPulldown.setValue(String.valueOf(qpmode));
         mQuickPulldown.setSummary(mQuickPulldown.getEntry());
         mQuickPulldown.setOnPreferenceChangeListener(this);
+
+        mTileAnimationStyle = (ListPreference) findPreference(PREF_TILE_ANIM_STYLE);
+        int tileAnimationStyle = Settings.System.getIntForUser(resolver,
+                Settings.System.ANIM_TILE_STYLE, 0, UserHandle.USER_CURRENT);
+        mTileAnimationStyle.setValue(String.valueOf(tileAnimationStyle));
+        updateTileAnimationStyleSummary(tileAnimationStyle);
+        updateAnimTileStyle(tileAnimationStyle);
+        mTileAnimationStyle.setOnPreferenceChangeListener(this);
+
+        mTileAnimationDuration = (ListPreference) findPreference(PREF_TILE_ANIM_DURATION);
+        int tileAnimationDuration = Settings.System.getIntForUser(resolver,
+                Settings.System.ANIM_TILE_DURATION, 2000, UserHandle.USER_CURRENT);
+        mTileAnimationDuration.setValue(String.valueOf(tileAnimationDuration));
+        updateTileAnimationDurationSummary(tileAnimationDuration);
+        mTileAnimationDuration.setOnPreferenceChangeListener(this);
 
         mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
         int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
@@ -219,6 +242,17 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
             int index = mQuickPulldown.findIndexOfValue((String) newValue);
             mQuickPulldown.setSummary(
                     mQuickPulldown.getEntries()[index]);
+        } else if (preference == mTileAnimationStyle) {
+            int tileAnimationStyle = Integer.valueOf((String) newValue);
+            Settings.System.putIntForUser(resolver, Settings.System.ANIM_TILE_STYLE,
+                    tileAnimationStyle, UserHandle.USER_CURRENT);
+            updateTileAnimationStyleSummary(tileAnimationStyle);
+            updateAnimTileStyle(tileAnimationStyle);
+        } else if (preference == mTileAnimationDuration) {
+            int tileAnimationDuration = Integer.valueOf((String) newValue);
+            Settings.System.putIntForUser(resolver, Settings.System.ANIM_TILE_DURATION,
+                    tileAnimationDuration, UserHandle.USER_CURRENT);
+            updateTileAnimationDurationSummary(tileAnimationDuration);
         } else if (preference == mQsPanelAlpha) {
             int bgAlpha = (Integer) newValue;
             int trueValue = (int) (((double) bgAlpha / 100) * 255);
@@ -247,6 +281,28 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
             updateHeaderProviderSummary(headerEnabled);
         }
         return true;
+    }
+
+    private void updateTileAnimationStyleSummary(int tileAnimationStyle) {
+        String prefix = (String) mTileAnimationStyle.getEntries()[mTileAnimationStyle.findIndexOfValue(String
+                .valueOf(tileAnimationStyle))];
+        mTileAnimationStyle.setSummary(getResources().getString(R.string.qs_set_animation_style, prefix));
+    }
+
+    private void updateTileAnimationDurationSummary(int tileAnimationDuration) {
+        String prefix = (String) mTileAnimationDuration.getEntries()[mTileAnimationDuration.findIndexOfValue(String
+                .valueOf(tileAnimationDuration))];
+        mTileAnimationDuration.setSummary(getResources().getString(R.string.qs_set_animation_duration, prefix));
+    }
+
+    private void updateAnimTileDuration(int tileAnimationStyle) {
+        if (mTileAnimationDuration != null) {
+            if (tileAnimationStyle == 0) {
+                mTileAnimationDuration.setSelectable(false);
+            } else {
+                mTileAnimationDuration.setSelectable(true);
+            }
+        }
     }
 
     private boolean isBrowseWallsAvailable() {
