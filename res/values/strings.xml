@@ -597,4 +597,11 @@
     <string name="corner_fwvals">Use framework values</string>
     <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
 
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">Blink Flashlight for call</string>
+    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_not_dnd">Only in ringer mode</string>
+    <string name="flashlight_on_call_dnd">Only in DND mode</string>
+    <string name="flashlight_on_call_always">Always</string>
+
 </resources>

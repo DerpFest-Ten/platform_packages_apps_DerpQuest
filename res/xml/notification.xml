@@ -26,6 +26,13 @@
         android:summary="@string/battery_light_summary"
         android:fragment="com.derpquest.settings.notification.BatteryLightSettings" />
 
+    <com.derp.support.preference.SystemSettingListPreference
+        android:key="flashlight_on_call"
+        android:title="@string/flashlight_on_call_title"
+        android:entries="@array/flashlight_on_call_entries"
+        android:entryValues="@array/flashlight_on_call_values"
+        android:defaultValue="0" />
+
     <com.derp.support.preference.SystemSettingSwitchPreference
         android:key="show_media_heads_up"
         android:title="@string/show_media_heads_up_title"
