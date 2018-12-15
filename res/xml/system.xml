@@ -69,4 +69,30 @@
             android:summary="@string/aspect_ratio_apps_info" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="corners_category"
+        android:title="@string/corners_category" >
+
+        <com.derp.support.preference.SecureSettingSwitchPreference
+            android:key="sysui_rounded_fwvals"
+            android:title="@string/corner_fwvals"
+            android:summary="@string/corner_fwvals_summary"
+            android:defaultValue="true"
+            android:disableDependentsState="true" />
+
+        <com.derp.support.preference.CustomSeekBarPreference
+            android:key="sysui_rounded_size"
+            android:title="@string/corner_radius"
+            android:max="60"
+            android:persistent="false"
+            android:dependency="sysui_rounded_fwvals" />
+
+        <com.derp.support.preference.CustomSeekBarPreference
+            android:key="sysui_rounded_content_padding"
+            android:title="@string/content_padding"
+            android:max="30"
+            android:persistent="false"
+            android:dependency="sysui_rounded_fwvals" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
