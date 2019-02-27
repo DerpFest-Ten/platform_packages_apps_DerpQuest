@@ -177,6 +177,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         mGestureSystemNavigation = (Preference) findPreference(KEY_GESTURE_SYSTEM);
 
         mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
+<<<<<<< HEAD:src/com/derpquest/settings/navigation/NavigationHolder.java
         if (derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
@@ -186,6 +187,16 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")) {
+=======
+        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back_nopill")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")) {
+>>>>>>> 3b87947... Navbar: Allow to choose a specific app activity:src/com/aosip/owlsnest/navigation/NavigationHolder.java
             prefSet.removePreference(mLayoutSettings);
         }
 
@@ -555,6 +566,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             }
         }
 
+<<<<<<< HEAD:src/com/derpquest/settings/navigation/NavigationHolder.java
         if (derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
@@ -563,6 +575,16 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
                 || derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")
+=======
+        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back_nopill")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")
+>>>>>>> 3b87947... Navbar: Allow to choose a specific app activity:src/com/aosip/owlsnest/navigation/NavigationHolder.java
                 && navigationBar) {
             homeCategory.setEnabled(false);
             backCategory.setEnabled(false);
@@ -572,7 +594,11 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             cameraCategory.setEnabled(false);
         }
 
+<<<<<<< HEAD:src/com/derpquest/settings/navigation/NavigationHolder.java
         if (derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && navigationBar) {
+=======
+        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && navigationBar) {
+>>>>>>> 3b87947... Navbar: Allow to choose a specific app activity:src/com/aosip/owlsnest/navigation/NavigationHolder.java
             homeCategory.setEnabled(true);
             backCategory.setEnabled(true);
             menuCategory.setEnabled(false);
