@@ -78,6 +78,18 @@
             settings:units="dp" />
     </PreferenceCategory>
 
+    <com.derp.support.preference.SystemSettingSwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:defaultValue="true" />
+
+    <com.derp.support.preference.SystemSettingSwitchPreference
+        android:key="fingerprint_error_vib"
+        android:title="@string/fprint_error_vib_title"
+        android:summary="@string/fprint_error_vib_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="lockscreen_clock_category"
         android:title="@string/lockscreen_clock_category_title" >
