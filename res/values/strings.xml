@@ -242,6 +242,13 @@
     <string name="tiles_title">QS Tiles</string>
     <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
 
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+
     <!-- QuickSettings Panel Transparency -->
     <string name="quick_settings_category">Quick Settings</string>
     <string name="qs_panel_alpha_title">Quick Settings opacity</string>
