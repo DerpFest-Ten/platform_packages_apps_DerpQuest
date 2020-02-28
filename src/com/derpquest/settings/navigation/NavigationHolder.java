@@ -590,12 +590,12 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")
 >>>>>>> 3b87947... Navbar: Allow to choose a specific app activity:src/com/aosip/owlsnest/navigation/NavigationHolder.java
                 && navigationBar) {
-            homeCategory.setEnabled(false);
-            backCategory.setEnabled(false);
-            menuCategory.setEnabled(false);
-            assistCategory.setEnabled(false);
-            appSwitchCategory.setEnabled(false);
-            cameraCategory.setEnabled(false);
+            homeCategory.setVisible(false);
+            backCategory.setVisible(false);
+            menuCategory.setVisible(false);
+            assistCategory.setVisible(false);
+            appSwitchCategory.setVisible(false);
+            cameraCategory.setVisible(false);
         }
 
 <<<<<<< HEAD:src/com/derpquest/settings/navigation/NavigationHolder.java
@@ -605,10 +605,10 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
 >>>>>>> 3b87947... Navbar: Allow to choose a specific app activity:src/com/aosip/owlsnest/navigation/NavigationHolder.java
             homeCategory.setEnabled(true);
             backCategory.setEnabled(true);
-            menuCategory.setEnabled(false);
-            assistCategory.setEnabled(false);
-            appSwitchCategory.setEnabled(false);
-            cameraCategory.setEnabled(false);
+            menuCategory.setVisible(false);
+            assistCategory.setVisible(false);
+            appSwitchCategory.setVisible(false);
+            cameraCategory.setVisible(false);
         }
 
         if (derpUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
