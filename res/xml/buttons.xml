@@ -25,28 +25,28 @@
         android:title="@string/power_button_category"
         android:order="1" >
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="reboot_in_power_menu"
             android:title="@string/powermenu_reboot_title"
             android:defaultValue="true" />
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="advanced_reboot_in_power_menu"
             android:title="@string/powermenu_advanced_restart_title"
             android:summary="@string/powermenu_advanced_restart_summary"
             android:defaultValue="false" />
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="lockdown_in_power_menu"
             android:title="@string/powermenu_lockdown_title"
             android:defaultValue="false" />
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="screenshot_in_power_menu"
             android:title="@string/powermenu_screenshot_title"
             android:defaultValue="true" />
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="screenrecord_in_power_menu"
             android:title="@string/powermenu_screenrecord_title"
             android:defaultValue="false" />
@@ -63,12 +63,12 @@
         android:key="button_backlight_options_category"
         android:title="@string/button_backlight_options_category" >
 
-        <com.aosip.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="button_backlight_enable"
             android:title="@string/button_backlight_enable_title"
             android:defaultValue="true"/>
 
-        <com.aosip.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="custom_button_use_screen_brightness"
             android:title="@string/button_link_brightness"
             android:summary="@string/button_link_brightness_summary"
@@ -76,7 +76,7 @@
             android:dependency="button_backlight_enable"
             android:disableDependentsState="true" />
 
-        <com.aosip.support.preference.CustomSeekBarPreference
+        <com.derp.support.preference.CustomSeekBarPreference
             android:key="button_manual_brightness_new"
             android:title="@string/button_manual_brightness"
             android:max="255"
@@ -84,7 +84,7 @@
             android:persistent="false"
             android:dependency="custom_button_use_screen_brightness" />
 
-        <com.aosip.support.preference.CustomSeekBarPreference
+        <com.derp.support.preference.CustomSeekBarPreference
             android:key="button_timeout"
             android:title="@string/button_timeout_title"
             android:max="30"
@@ -92,7 +92,7 @@
             android:persistent="false"
             android:dependency="button_backlight_enable" />
 
-        <com.aosip.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="button_backlight_on_touch_only"
             android:title="@string/button_backlight_on_touch_only_title"
             android:summary="@string/button_backlight_on_touch_only_summary"

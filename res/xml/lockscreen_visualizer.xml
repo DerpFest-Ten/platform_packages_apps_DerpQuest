@@ -19,34 +19,34 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_visualizer_title" >
 
-    <com.aosip.support.preference.SecureSettingSwitchPreference
+    <com.derp.support.preference.SecureSettingSwitchPreference
         android:key="lockscreen_visualizer"
         android:title="@string/lockscreen_visualizer_title"
         android:summary="@string/lockscreen_visualizer_summary"
         android:defaultValue="true" />
 
-    <com.aosip.support.preference.SecureSettingSwitchPreference
+    <com.derp.support.preference.SecureSettingSwitchPreference
         android:key="ambient_visualizer"
         android:title="@string/ambient_visualizer_title"
         android:summary="@string/ambient_visualizer_summary"
         android:dependency="lockscreen_visualizer"
         android:defaultValue="false" />
 
-    <com.aosip.support.preference.SecureSettingSwitchPreference
+    <com.derp.support.preference.SecureSettingSwitchPreference
         android:key="lockscreen_visualizer_autocolor"
         android:title="@string/lockscreen_autocolor_title"
         android:summary="@string/lockscreen_autocolor_summary"
         android:defaultValue="false"
         android:dependency="lockscreen_visualizer"/>
 
-    <com.aosip.support.preference.SecureSettingSwitchPreference
+    <com.derp.support.preference.SecureSettingSwitchPreference
         android:key="lockscreen_lavalamp_enabled"
         android:title="@string/lockscreen_lavalamp_title"
         android:summary="@string/lockscreen_lavalamp_summary"
         android:defaultValue="true"
         android:dependency="lockscreen_visualizer"/>
 
-    <com.aosip.support.preference.CustomSecureSeekBarPreference
+    <com.derp.support.preference.CustomSecureSeekBarPreference
         android:key="lockscreen_lavalamp_speed"
         android:title="@string/lockscreen_lavalamp_speed_title"
         android:defaultValue="10000"
@@ -56,7 +56,7 @@
         settings:units="@string/unit_milliseconds"
         android:dependency="lockscreen_lavalamp_enabled"/>
 
-    <com.aosip.support.preference.CustomSecureSeekBarPreference
+    <com.derp.support.preference.CustomSecureSeekBarPreference
         android:key="lockscreen_solid_units_count"
         android:title="@string/lockscreen_solid_units_count_title"
         android:defaultValue="32"
@@ -65,7 +65,7 @@
         settings:interval="16"
         android:dependency="lockscreen_visualizer"/>
 
-    <com.aosip.support.preference.CustomSecureSeekBarPreference
+    <com.derp.support.preference.CustomSecureSeekBarPreference
         android:key="lockscreen_solid_fudge_factor"
         android:title="@string/lockscreen_solid_fudge_factor_title"
         android:defaultValue="16"
@@ -73,7 +73,7 @@
         settings:min="2"
         android:dependency="lockscreen_visualizer"/>
 
-    <com.aosip.support.preference.CustomSecureSeekBarPreference
+    <com.derp.support.preference.CustomSecureSeekBarPreference
         android:key="lockscreen_solid_units_opacity"
         android:title="@string/lockscreen_solid_units_opacity_title"
         android:defaultValue="140"

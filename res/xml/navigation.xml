@@ -27,7 +27,7 @@
             android:targetClass="com.android.systemui.tuner.NavBarActivity" />
     </Preference>
 
-   <com.aosip.support.preference.SystemSettingSwitchPreference
+   <com.derp.support.preference.SystemSettingSwitchPreference
         android:key="navigation_bar_menu_arrow_keys"
         android:title="@string/navigation_bar_menu_arrow_keys_title"
         android:summary="@string/navigation_bar_menu_arrow_keys_summary"

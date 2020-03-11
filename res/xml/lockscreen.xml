@@ -27,13 +27,13 @@
                 android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
     </Preference>
 
-    <com.aosip.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preference.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
-    <com.aosip.support.preference.GlobalSettingSwitchPreference
+    <com.derp.support.preference.GlobalSettingSwitchPreference
         android:key="lockscreen_enable_power_menu"
         android:title="@string/lockscreen_enable_power_menu_title"
         android:summary="@string/lockscreen_enable_power_menu_summary"
@@ -42,19 +42,19 @@
     <Preference
         android:title="@string/lockscreen_visualizer_title"
         android:summary="@string/lockscreen_visualizer_summary"
-        android:fragment="com.aosip.owlsnest.lockscreen.LockScreenVisualizer" />
+        android:fragment="com.derpquest.settings.lockscreen.LockScreenVisualizer" />
 
     <PreferenceCategory
         android:key="album_art_category"
         android:title="@string/media_art_title" >
 
-        <com.aosip.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="lockscreen_media_metadata"
             android:title="@string/media_art_title"
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
 
-        <com.aosip.support.preference.SystemSettingListPreference
+        <com.derp.support.preference.SystemSettingListPreference
             android:key="lockscreen_album_art_filter"
             android:title="@string/lockscreen_cover_filter_title"
             android:entries="@array/lockscreen_cover_filter_entries"
@@ -62,7 +62,7 @@
             android:dependency="lockscreen_media_metadata"
             android:defaultValue="5" />
 
-         <com.aosip.support.preference.CustomSystemSeekBarPreference
+         <com.derp.support.preference.CustomSystemSeekBarPreference
             android:key="lockscreen_media_blur"
             android:title="@string/lockscreen_media_blur_title"
             settings:allowEditText="true"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2020 AOSiP
+     Copyright (C) 2016-2020 DerpFest
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,15 +16,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- AOSiP device info settings -->
-    <string name="aosip_version">AOSiP version</string>
-    <string name="aosip_version_default">Unknown</string>
+    <!-- DerpFest device info settings -->
+    <string name="derp_version">DerpFest version</string>
+    <string name="derp_version_default">Unknown</string>
 
-    <!-- AOSiP custom settings main -->
+    <!-- DerpFest custom settings main -->
     <string name="header_category_personalization">UI settings</string>
-    <string name="nest_title">OwlsNest</string>
-    <string name="aosip_title">AOSiP Settings</string>
-    <string name="owlsnest_settings_title">Categories</string>
+    <string name="nest_title">DerpQuest</string>
+    <string name="derp_title">DerpFest Settings</string>
+    <string name="derpquest_settings_title">Categories</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -38,7 +38,7 @@
     <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
 
 
-    <!--Owlsnest statusbar-->
+    <!--DerpQuest statusbar-->
     <string name="statusbar_bar_title">Statusbar</string>
     <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
     <string name="icon_category">Icons</string>
@@ -155,7 +155,7 @@
 
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using DerpFest when they see your screen</string>
     <string name="status_bar_logo_style_title">Custom logo style</string>
 
     <!-- Carrier Label -->
@@ -171,7 +171,7 @@
     <string name="show_carrier_enabled">Both</string>
 
 
-    <!--Owlsnest Notification-->
+    <!--DerpQuest Notification-->
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
@@ -214,7 +214,7 @@
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full battery (100)</string>
 
-    <!--Owlsnest Quick settings-->
+    <!--DerpQuest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
     <string name="expanded_category">Expanded</string>
@@ -238,7 +238,7 @@
     <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
 
 
-    <!--Owlsnest navigation-->
+    <!--DerpQuest navigation-->
     <string name="navigation_category">Navigation</string>
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
     <string name="navigation_tuner_title">Navigation Tuner</string>
@@ -255,7 +255,7 @@
     <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
     <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
 
-    <!--Owlsnest buttons-->
+    <!--DerpQuest buttons-->
     <string name="buttons_title">Hardware buttons</string>
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
     <string name="power_button_category">Power</string>
@@ -276,12 +276,12 @@
     <string name="screen_off_animation_scale">Scale</string>
 
 
-    <!--Owlsnest recentscreen-->
+    <!--DerpQuest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
 
 
-    <!--Owlsnest Gestures-->
+    <!--DerpQuest Gestures-->
     <string name="gesture_category">Gesture</string>
     <string name="gesture_summary">Gesture based options/actions</string>
     <string name="pixel_gesture_title">Pixel Gestures</string>
@@ -362,7 +362,7 @@
     <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>
 
 
-    <!--Owlsnest lockscreen-->
+    <!--DerpQuest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="secure_lockscreen">Secure lockscreen options</string>
@@ -411,7 +411,7 @@
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
 
 
-    <!--Owlsnest advanced-->
+    <!--DerpQuest advanced-->
     <string name="advanced_title">Advanced Settings</string>
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>

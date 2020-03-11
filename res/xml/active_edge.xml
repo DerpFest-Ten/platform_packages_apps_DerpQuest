@@ -56,7 +56,7 @@
             android:targetClass="com.google.android.systemui.elmyra.actions.LongSqueezeCustomApp" />
     </Preference>
 
-    <com.aosip.support.preference.CustomSeekBarPreference
+    <com.derp.support.preference.CustomSeekBarPreference
         android:key="gesture_assist_sensitivity"
         android:title="@string/active_edge_sensitivity_title"
         android:max="8"

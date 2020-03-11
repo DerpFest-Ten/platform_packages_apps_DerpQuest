@@ -19,14 +19,14 @@
     <color name="tab_text_color">@*android:color/accent_device_default_light</color>
     <color name="white">#FFF</color>
 
-    <color name="owlsnest_oval_advanced">#ff6868</color>
-    <color name="owlsnest_oval_buttons">#31aa5c</color>
-    <color name="owlsnest_oval_gesture">#ffaf66</color>
-    <color name="owlsnest_oval_lockscreen">#84a7f4</color>
-    <color name="owlsnest_oval_nav">#f4d484</color>
-    <color name="owlsnest_oval_notif">#9863d8</color>
-    <color name="owlsnest_oval_qs">#fa6dff</color>
-    <color name="owlsnest_oval_recents">#6fdb3d</color>
-    <color name="owlsnest_oval_status">#8da2e8</color>
+    <color name="derpquest_oval_advanced">#ff6868</color>
+    <color name="derpquest_oval_buttons">#31aa5c</color>
+    <color name="derpquest_oval_gesture">#ffaf66</color>
+    <color name="derpquest_oval_lockscreen">#84a7f4</color>
+    <color name="derpquest_oval_nav">#f4d484</color>
+    <color name="derpquest_oval_notif">#9863d8</color>
+    <color name="derpquest_oval_qs">#fa6dff</color>
+    <color name="derpquest_oval_recents">#6fdb3d</color>
+    <color name="derpquest_oval_status">#8da2e8</color>
 
 </resources>

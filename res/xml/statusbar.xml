@@ -22,22 +22,22 @@
     <Preference
         android:key="battery"
         android:title="@string/battery_category"
-        android:fragment="com.aosip.owlsnest.statusbar.Battery" />
+        android:fragment="com.derpquest.settings.statusbar.Battery" />
 
     <Preference
         android:key="carrier_label"
         android:title="@string/status_carrier_title"
-        android:fragment="com.aosip.owlsnest.statusbar.CarrierLabel" />
+        android:fragment="com.derpquest.settings.statusbar.CarrierLabel" />
 
     <Preference
         android:key="clock"
         android:title="@string/status_bar_clock"
-        android:fragment="com.aosip.owlsnest.statusbar.Clock" />
+        android:fragment="com.derpquest.settings.statusbar.Clock" />
 
     <Preference
         android:key="network_traffic"
         android:title="@string/network_traffic_state_title"
-        android:fragment="com.aosip.owlsnest.statusbar.NetworkTraffic" />
+        android:fragment="com.derpquest.settings.statusbar.NetworkTraffic" />
 
     <PreferenceCategory
         android:title="@string/status_bar_icons_title">
@@ -62,13 +62,13 @@
             android:dependency="status_bar_logo"
             android:title="@string/status_bar_logo_style_title" />
 
-         <com.aosip.support.preference.SystemSettingSwitchPreference
+         <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="show_volte_icon"
             android:title="@string/volte_switch_title"
             android:summary="@string/volte_switch_summary"
             android:defaultValue="false" />
 
-         <com.aosip.support.preference.SystemSettingListPreference
+         <com.derp.support.preference.SystemSettingListPreference
             android:key="volte_icon_style"
             android:title="@string/volte_icon_style_title"
             android:entries="@array/volte_icon_type_entries"
@@ -76,13 +76,13 @@
             android:summary="%s"
             android:defaultValue="0"/>
 
-         <com.aosip.support.preference.SystemSettingSwitchPreference
+         <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="show_fourg"
             android:title="@string/show_fourg_title"
             android:summary="@string/show_fourg_summary"
             android:defaultValue="false" />
 
-         <com.aosip.support.preference.SystemSettingSwitchPreference
+         <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="use_old_mobiletype"
             android:title="@string/use_old_mobiletype_title"
             android:summary="@string/use_old_mobiletype_summary"

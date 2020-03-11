@@ -28,6 +28,6 @@
         android:key="pixel_gesture_settings"
         android:title="@string/pixel_gesture_title"
         android:summary="@string/pixel_gesture_summary"
-        android:fragment="com.aosip.owlsnest.gesture.PixelGestureHolder" />
+        android:fragment="com.derpquest.settings.gesture.PixelGestureHolder" />
 
 </PreferenceScreen>

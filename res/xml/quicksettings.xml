@@ -21,7 +21,7 @@
     android:title="@string/quicksettings_title" >
 
     <!-- Battery mode -->
-    <com.aosip.support.preference.SystemSettingListPreference
+    <com.derp.support.preference.SystemSettingListPreference
         android:key="qs_battery_mode"
         android:title="@string/battery_percentage_title"
         android:entries="@array/qs_battery_mode_entries"
@@ -32,27 +32,27 @@
         android:key="string/qs_brightness_category"
         android:title="@string/qs_brightness_category_title">
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_show_brightness_title"
             android:summary="@string/qs_show_brightness_summary"
             android:defaultValue="true" />
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="qs_brightness_position_bottom"
             android:title="@string/qs_brightness_position_bottom_title"
             android:summary="@string/qs_brightness_position_bottom_summary"
             android:defaultValue="false"
             android:dependency="qs_show_brightness" />
 
-        <com.aosip.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="qs_show_brightness_icon"
             android:title="@string/brightness_icon_title"
             android:summary="@string/brightness_icon_summary"
             android:dependency="qs_show_brightness"
             android:defaultValue="true"/>
 
-        <com.aosip.support.preference.SecureSettingSwitchPreference
+        <com.derp.support.preference.SecureSettingSwitchPreference
             android:key="qs_vibrate"
             android:title="@string/qs_vibrate_title"
             android:summary="@string/qs_vibrate_summary"
