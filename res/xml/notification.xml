@@ -26,12 +26,6 @@
         android:summary="@string/battery_light_summary"
         android:fragment="com.aosip.owlsnest.notification.BatteryLightSettings" />
 
-    <com.aosip.support.preference.SystemSettingSwitchPreference
-        android:key="notification_sound_vib_screen_on"
-        android:title="@string/notification_sound_vib_screen_on_title"
-        android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" />
-
     <PreferenceCategory
         android:title="@string/pulse_ambient_category_title" >
 
