@@ -153,9 +153,9 @@
     <string name="show_network_traffic_all">Both</string>
     <string name="nettraf_font_size">Single net font size</string>
 
-    <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using DerpFest when they see your screen</string>
+    <!-- DerpFest logo -->
+    <string name="derp_logo_title">DerpFest Logo</string>
+    <string name="derp_logo_summary">Let everyone know that you\'re using DerpFest when they see your screen</string>
     <string name="status_bar_logo_style_title">Custom logo style</string>
 
     <!-- Carrier Label -->

@@ -43,17 +43,17 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
 
     private ListPreference mLogoStyle;
-    private SwitchPreference mShowKronicLogo;
+    private SwitchPreference mShowDerpLogo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.statusbar);
 
-        mShowKronicLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
-        mShowKronicLogo.setChecked((Settings.System.getInt(getContentResolver(),
+        mShowDerpLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
+        mShowDerpLogo.setChecked((Settings.System.getInt(getContentResolver(),
              Settings.System.STATUS_BAR_LOGO, 0) == 1));
-        mShowKronicLogo.setOnPreferenceChangeListener(this);
+        mShowDerpLogo.setOnPreferenceChangeListener(this);
 
         mLogoStyle = (ListPreference) findPreference("status_bar_logo_style");
         mLogoStyle.setOnPreferenceChangeListener(this);
@@ -66,7 +66,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if  (preference == mShowKronicLogo) {
+        if  (preference == mShowDerpLogo) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);

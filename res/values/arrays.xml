@@ -230,12 +230,12 @@
 
     <!-- Statusbar Logos -->
     <string-array name="status_bar_logo_style_entries">
-        <item>Default (Kronic 2.0)</item>
-        <item>Khloe</item>
-        <item>Kronic</item>
-        <item>Kronic 3.0</item>
-        <item>OwlsNest</item>
+        <item>Default DerpFest logo</item>
+        <item>DerpFest alternative</item>
         <item>Owl</item>
+        <item>Owl 2</item>
+        <item>OnePlus</item>
+        <item>Death Star</item>
     </string-array>
 
     <string-array name="status_bar_logo_style_values" translatable="false">
