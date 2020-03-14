@@ -19,14 +19,14 @@
     <color name="tab_text_color">@*android:color/accent_device_default_light</color>
     <color name="white">#FFF</color>
 
-    <color name="derpquest_oval_advanced">#ff6868</color>
-    <color name="derpquest_oval_buttons">#31aa5c</color>
-    <color name="derpquest_oval_gesture">#ffaf66</color>
-    <color name="derpquest_oval_lockscreen">#84a7f4</color>
-    <color name="derpquest_oval_nav">#f4d484</color>
-    <color name="derpquest_oval_notif">#9863d8</color>
-    <color name="derpquest_oval_qs">#fa6dff</color>
-    <color name="derpquest_oval_recents">#6fdb3d</color>
-    <color name="derpquest_oval_status">#8da2e8</color>
+    <!-- DerpQuest icon colors definition -->
+    <color name="derpquest_status_icon_background">#2196F3</color>
+    <color name="derpquest_qs_icon_background">#FF7E0F</color>
+    <color name="derpquest_buttons_icon_background">#01B1AF</color>
+    <color name="derpquest_gesture_icon_background">#C14CE6</color>
+    <color name="derpquest_lockscreen_icon_background">#0F9D58</color>
+    <color name="derpquest_notif_icon_background">#5011C1</color>
+    <color name="derpquest_nav_icon_background">#72B70F</color>
+    <color name="derpquest_advanced_icon_background">#2EC7DC</color>
 
 </resources>
