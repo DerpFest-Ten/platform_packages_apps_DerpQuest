@@ -46,6 +46,12 @@
         android:entryValues="@array/heads_up_snooze_values"
         android:persistent="false" />
 
+    <com.derp.support.preference.SystemSettingSwitchPreference
+            android:key="notification_headers"
+            android:title="@string/notification_headers_title"
+            android:summary="@string/notification_headers_summary"
+            android:defaultValue="false" />
+
     <PreferenceCategory
         android:title="@string/pulse_ambient_category_title" >
 
