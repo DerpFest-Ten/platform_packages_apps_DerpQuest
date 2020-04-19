@@ -353,6 +353,32 @@
         <item>@string/lock_fonts_condensed_bold_italic</item>
         <item>@string/lock_fonts_medium_normal</item>
         <item>@string/lock_fonts_medium_italic</item>
+        <item>@string/lock_clock_font_aclonica</item>
+        <item>@string/lock_clock_font_amarante</item>
+        <item>@string/lock_clock_font_bariol</item>
+        <item>@string/lock_clock_font_bignoodleital</item>
+        <item>@string/lock_clock_font_biko</item>
+        <item>@string/lock_clock_font_cagliostro</item>
+        <item>@string/lock_clock_font_sourcesanspro</item>
+        <item>@string/lock_clock_font_oneplusslate</item>
+        <item>@string/lock_clock_font_mexcellent</item>
+        <item>@string/lock_clock_font_gobold</item>
+        <item>@string/lock_clock_font_googlesans</item>
+        <item>@string/lock_clock_font_burnstown</item>
+        <item>@string/lock_clock_font_dumbledor</item>
+        <item>@string/lock_clock_font_samsung</item>
+        <item>@string/lock_clock_font_phantombold</item>
+        <item>@string/lock_clock_font_neonneon</item>
+        <item>@string/lock_clock_font_coolstory</item>
+        <item>@string/lock_clock_font_reemkufi</item>
+        <item>@string/lock_clock_font_lgsmartgothic</item>
+        <item>@string/lock_clock_font_roadrage</item>
+        <item>@string/lock_clock_font_sonysketch</item>
+        <item>@string/lock_clock_font_snowstorm</item>
+        <item>@string/lock_clock_font_themeable</item>
+        <item>@string/lock_clock_font_surfer</item>
+        <item>@string/lock_clock_font_circularstd</item>
+        <item>@string/lock_clock_font_rosemary</item>
     </string-array>
     <string-array name="lock_clock_fonts_values" translatable="false">
         <item>0</item>
@@ -369,6 +395,32 @@
         <item>11</item>
         <item>12</item>
         <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
     </string-array>
 
 </resources>

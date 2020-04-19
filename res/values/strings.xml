@@ -461,6 +461,39 @@
     <string name="file_header_provider_title">Single image</string>
     <string name="file_header_provider" translatable="false">file</string>
 
+    <!-- Lockscreen fonts - other fonts, untranslatable by default -->
+    <!-- Custom fonts -->
+    <string name="lock_clock_font_aclonica" translatable="false">Aclonica</string>
+    <string name="lock_clock_font_amarante" translatable="false">Amarante</string>
+    <string name="lock_clock_font_bariol" translatable="false">Bariol</string>
+    <string name="lock_clock_font_cagliostro" translatable="false">Cagliostro</string>
+    <string name="lock_clock_font_sourcesanspro" translatable="false">Source Sans Pro</string>
+    <string name="lock_clock_font_oneplusslate" translatable="false">OnePlus Slate</string>
+    <string name="lock_clock_font_mexcellent" translatable="false">Mexcellent</string>
+    <string name="lock_clock_font_burnstown" translatable="false">Burnstown</string>
+    <string name="lock_clock_font_dumbledor" translatable="false">Dumbledor</string>
+    <string name="lock_clock_font_bignoodleital" translatable="false">Big Noodle Tilting Italic</string>
+    <string name="lock_clock_font_bignoodle" translatable="false">Big Noodle Tilting</string>
+    <string name="lock_clock_font_biko" translatable="false">Biko</string>
+    <string name="lock_clock_font_samsung" translatable="false">Samsung</string>
+    <string name="lock_clock_font_phantombold" translatable="false">Phantom Bold</string>
+    <string name="lock_clock_font_coolstory" translatable="false">Coolstory</string>
+    <string name="lock_clock_font_lgsmartgothic" translatable="false">LG Smart Gothic</string>
+    <string name="lock_clock_font_sonysketch" translatable="false">Sony Sketch</string>
+    <string name="lock_clock_font_surfer" translatable="false">Surfer</string>
+    <string name="lock_clock_font_gobold" translatable="false">GoBold Light</string>
+    <string name="lock_clock_font_googlesans" translatable="false">Google Sans</string>
+    <string name="lock_clock_font_circularstd" translatable="false">Circular Standard</string>
+    <string name="lock_clock_font_rosemary" translatable="false">Rosemary</string>
+    <string name="lock_clock_font_inter" translatable="false">Inter Regular</string>
+    <string name="lock_clock_font_exo2" translatable="false">Exo 2</string>
+    <string name="lock_clock_font_neonneon" translatable="false">Neonneon</string>
+    <string name="lock_clock_font_reemkufi" translatable="false">Reem Kufi</string>
+    <string name="lock_clock_font_roadrage" translatable="false">Road Rage</string>
+    <string name="lock_clock_font_snowstorm" translatable="false">Snowstorm</string>
+    <string name="lock_clock_font_themeable">Themeable (or VCR OSD Mono)</string>
+    <string name="lock_dateown_font_themeable">Themeable (or Fox and Cat)</string>
+
     <!-- Lockscreen fonts - Common strings -->
     <string name="lock_fonts_system_headline">System headline (default)</string>
     <string name="lock_fonts_system_body">System body</string>
