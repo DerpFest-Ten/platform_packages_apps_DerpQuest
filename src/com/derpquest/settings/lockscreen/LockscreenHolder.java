@@ -21,8 +21,13 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
+import androidx.preference.SwitchPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
 
+import android.provider.Settings;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -37,6 +42,10 @@ import java.util.List;
 public class LockscreenHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String LOCK_CLOCK_FONT_STYLE = "lock_clock_font_style";
+
+    private ListPreference mLockClockFonts;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.DERP;
@@ -46,6 +55,13 @@ public class LockscreenHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen);
+
+        // Lockscren Clock Fonts
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONT_STYLE);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_CLOCK_FONT_STYLE, 0)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -54,6 +70,14 @@ public class LockscreenHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mLockClockFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_CLOCK_FONT_STYLE,
+                    Integer.valueOf((String) newValue));
+            mLockClockFonts.setValue(String.valueOf(newValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+            return true;
+        }
         return false;
     }
 
