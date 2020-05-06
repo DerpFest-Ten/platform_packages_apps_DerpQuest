@@ -20,6 +20,7 @@
     <color name="white">#FFF</color>
 
     <!-- DerpQuest icon colors definition -->
+    <color name="derpquest_about_icon_background">#a3a3a3</color>
     <color name="derpquest_status_icon_background">#2196F3</color>
     <color name="derpquest_qs_icon_background">#FF7E0F</color>
     <color name="derpquest_buttons_icon_background">#01B1AF</color>

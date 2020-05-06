@@ -79,4 +79,11 @@
        android:summary="@string/advanced_summary"
        android:icon="@drawable/ic_derpquest_advanced_background" />
 
+    <PreferenceScreen
+       android:key="about"
+       android:fragment="com.derpquest.settings.AboutDerp"
+       android:title="@string/derp_about_title"
+       android:summary="@string/derp_about_summary"
+       android:icon="@drawable/ic_derpquest_about_background" />
+
 </PreferenceScreen>
