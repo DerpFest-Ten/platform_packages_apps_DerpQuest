@@ -726,4 +726,9 @@
     <string name="gesture_navbar_handle_middle">Middle</string>
     <string name="gesture_navbar_handle_large">Large</string>
 
+    <!-- Launch music player when headset is connected -->
+    <string name="music_options">Music Options</string>
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
 </resources>
