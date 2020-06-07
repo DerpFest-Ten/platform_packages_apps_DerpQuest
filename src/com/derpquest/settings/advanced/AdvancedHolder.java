@@ -34,7 +34,6 @@ import androidx.preference.ListPreference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -63,29 +62,18 @@ public class AdvancedHolder extends SettingsPreferenceFragment implements
 	private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
 	private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
 	private static final String SYSUI_ROUNDED_FWVALS = "sysui_rounded_fwvals";
-    private static final String VIBRATE_ON_CONNECT = "vibrate_on_connect";
-    private static final String VIBRATE_ON_CALLWAITING = "vibrate_on_callwaiting";
-    private static final String VIBRATE_ON_DISCONNECT = "vibrate_on_disconnect";
 
     private AppMultiSelectListPreference mAspectRatioAppsSelect;
     private ScrollAppsViewPreference mAspectRatioApps;
 	private CustomSeekBarPreference mCornerRadius;
 	private CustomSeekBarPreference mContentPadding;
 	private SecureSettingSwitchPreference mRoundedFwvals;
-    private SwitchPreference mVibOnConnect;
-    private SwitchPreference mVibOnWait;
-    private SwitchPreference mVibOnDisconnect;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.system);
         ContentResolver resolver = getActivity().getContentResolver();
-
-        // In-Call Vibration options
-        mVibOnConnect = (SwitchPreference) findPreference(VIBRATE_ON_CONNECT);
-        mVibOnWait = (SwitchPreference) findPreference(VIBRATE_ON_CALLWAITING);
-        mVibOnDisconnect = (SwitchPreference) findPreference(VIBRATE_ON_DISCONNECT);
 
         final PreferenceCategory aspectRatioCategory =
             (PreferenceCategory) getPreferenceScreen().findPreference(KEY_ASPECT_RATIO_CATEGORY);
