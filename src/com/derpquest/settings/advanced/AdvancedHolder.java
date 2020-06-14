@@ -61,12 +61,14 @@ public class AdvancedHolder extends SettingsPreferenceFragment implements
     private static final String KEY_ASPECT_RATIO_CATEGORY = "aspect_ratio_category";
 	private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
 	private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
+    private static final String SYSUI_STATUS_BAR_PADDING = "sysui_status_bar_padding";
 	private static final String SYSUI_ROUNDED_FWVALS = "sysui_rounded_fwvals";
 
     private AppMultiSelectListPreference mAspectRatioAppsSelect;
     private ScrollAppsViewPreference mAspectRatioApps;
 	private CustomSeekBarPreference mCornerRadius;
 	private CustomSeekBarPreference mContentPadding;
+    private CustomSeekBarPreference mSBPadding;
 	private SecureSettingSwitchPreference mRoundedFwvals;
 
     @Override
@@ -128,6 +130,16 @@ public class AdvancedHolder extends SettingsPreferenceFragment implements
         mContentPadding.setValue(contentPadding);
         mContentPadding.setOnPreferenceChangeListener(this);
 
+        // Status Bar Content Padding
+        mSBPadding = (CustomSeekBarPreference) findPreference(SYSUI_STATUS_BAR_PADDING);
+        int resourceIdSBPadding = res.getIdentifier("com.android.systemui:dimen/status_bar_extra_padding", null,
+                null);
+        int sbPadding = Settings.Secure.getIntForUser(ctx.getContentResolver(),
+                Settings.Secure.SYSUI_STATUS_BAR_PADDING,
+                (int) (res.getDimension(resourceIdSBPadding) / density), UserHandle.USER_CURRENT);
+        mSBPadding.setValue(sbPadding);
+        mSBPadding.setOnPreferenceChangeListener(this);
+
         // Rounded use Framework Values
         mRoundedFwvals = (SecureSettingSwitchPreference) findPreference(SYSUI_ROUNDED_FWVALS);
         mRoundedFwvals.setOnPreferenceChangeListener(this);
@@ -157,6 +169,10 @@ public class AdvancedHolder extends SettingsPreferenceFragment implements
                         Settings.Secure.putIntForUser(getContext().getContentResolver(), Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING,
                                 (int) objValue, UserHandle.USER_CURRENT);
                         return true;
+                } else if (preference == mSBPadding) {
+                        Settings.Secure.putIntForUser(getContext().getContentResolver(), Settings.Secure.SYSUI_STATUS_BAR_PADDING,
+                                (int) objValue, UserHandle.USER_CURRENT);
+                        return true;
                 } else if (preference == mRoundedFwvals) {
                     restoreCorners();
                     return true;
@@ -177,8 +193,10 @@ public class AdvancedHolder extends SettingsPreferenceFragment implements
 
         int resourceIdRadius = (int) ctx.getResources().getDimension(com.android.internal.R.dimen.rounded_corner_radius);
         int resourceIdPadding = res.getIdentifier("com.android.systemui:dimen/rounded_corner_content_padding", null, null);
+        int resourceIdSBPadding = res.getIdentifier("com.android.systemui:dimen/status_bar_extra_padding", null, null);
         mCornerRadius.setValue((int) (resourceIdRadius / density));
         mContentPadding.setValue((int) (res.getDimension(resourceIdPadding) / density));
+        mSBPadding.setValue((int) (res.getDimension(resourceIdSBPadding) / density));
     }
 
     @Override
