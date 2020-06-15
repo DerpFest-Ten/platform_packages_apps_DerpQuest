@@ -41,6 +41,12 @@
         settings:min="0"
         android:persistent="false" />
 
+    <com.derp.support.preference.SystemSettingSwitchPreference
+        android:key="qs_blur_enabled"
+        android:title="@string/qs_blur_title"
+        android:summary="@string/qs_blur_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="string/qs_brightness_category"
         android:title="@string/qs_brightness_category_title">
