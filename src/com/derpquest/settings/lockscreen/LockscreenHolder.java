@@ -16,8 +16,10 @@
 
 package com.derpquest.settings.lockscreen;
 
+import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
@@ -44,9 +46,12 @@ public class LockscreenHolder extends SettingsPreferenceFragment implements
 
     private static final String LOCK_CLOCK_FONT_STYLE = "lock_clock_font_style";
     private static final String LOCK_DATE_FONTS = "lock_date_fonts";
+    private static final String FINGERPRINT_CATEGORY = "fingerprint_category";
 
     private ListPreference mLockClockFonts;
     private ListPreference mLockDateFonts;
+    private FingerprintManager mFingerprintManager;
+    private PreferenceCategory mFingerprint;
 
     @Override
     public int getMetricsCategory() {
@@ -71,6 +76,13 @@ public class LockscreenHolder extends SettingsPreferenceFragment implements
                 getContentResolver(), Settings.System.LOCK_DATE_FONTS, 1)));
         mLockDateFonts.setSummary(mLockDateFonts.getEntry());
         mLockDateFonts.setOnPreferenceChangeListener(this);
+
+        mFingerprintManager = (FingerprintManager) this.getSystemService(
+                Context.FINGERPRINT_SERVICE);
+        mFingerprint = (PreferenceCategory) findPreference(FINGERPRINT_CATEGORY);
+        if (mFingerprintManager == null) {
+            getPreferenceScreen().removePreference(mFingerprint);
+        }
     }
 
     @Override
