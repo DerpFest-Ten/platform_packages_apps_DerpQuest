@@ -136,21 +136,12 @@
     <string name="qs_battery_percentage_title">QS Batterieprozentsatz</string>
     <string name="qs_battery_percentage_summary">Den Batterieprozentsatz im QS-Header anstelle der Batterieschätzung anzeigen</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Datenverkehrsanzeige</string>
-    <string name="network_traffic_location">Indikator für Datentransfer</string>
-    <string name="traffic_disabled">Deaktiviert</string>
-    <string name="traffic_statusbar">Statusleiste</string>
-    <string name="traffic_expanded_statusbar">Erweiterter Modus</string>
-    <string name="network_traffic_autohide_threshold_title">Schwellenwert (in kB/s), ab dem die Netzwerk-Aktivitätsanzeige ausgeblendet wird</string>
-    <string name="network_traffic_arrow">Pfeile anzeigen</string>
-    <string name="network_traffic_arrow_summary">Pfeile des Datenverkehrs in der Statusleiste ausblenden</string>
-    <string name="network_traffic_type">Netzwerkverbindung wählen</string>
-    <string name="show_network_traffic_combined">Kombiniert (Upload + Download)</string>
-    <string name="show_network_traffic_dynamic">Dynamisch</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Beide</string>
-    <string name="nettraf_font_size">Einzel Netz Schriftgröße</string>
+    <string name="net_monitor_category_title">Network monitor</string>
+    <string name="network_traffic_state_title">Enable network monitor</string>
+    <string name="network_traffic_state_sb_title">Always show net monitor</string>
+    <string name="network_traffic_state_summary">Show net download activity, or upload if bigger, in expanded statusbar</string>
+    <string name="network_traffic_state_sb_summary">Keep showing net activity also in normal statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
     <!-- DerpFest logo -->
     <string name="derp_logo_title">DerpFest Logo</string>
     <string name="derp_logo_summary">Wenn leute den Bildschrim sehen, lass alle wissen, dass du DerpFest nutzt</string>
