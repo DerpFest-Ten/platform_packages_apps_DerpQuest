@@ -60,6 +60,7 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     private static final String CUSTOM_HEADER_PROVIDER = "custom_header_provider";
     private static final String STATUS_BAR_CUSTOM_HEADER = "status_bar_custom_header";
     private static final String FILE_HEADER_SELECT = "file_header_select";
+    private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
 
     private static final int REQUEST_PICK_IMAGE = 0;
 
@@ -71,6 +72,7 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mHeaderEnabled;
     private Preference mFileHeader;
     private String mFileHeaderProvider;
+    private CustomSeekBarPreference mQsPanelAlpha;
 
     @Override
     public int getMetricsCategory() {
@@ -81,6 +83,12 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quicksettings);
+
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
+                Settings.System.QS_PANEL_BG_ALPHA, 255);
+        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
 
         mDaylightHeaderProvider = getResources().getString(R.string.daylight_header_provider);
         mFileHeaderProvider = getResources().getString(R.string.file_header_provider);
@@ -148,6 +156,11 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) newValue;
+            int trueValue = (int) (((double) bgAlpha / 100) * 255);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, trueValue);
         if (preference == mDaylightHeaderPack) {
             String value = (String) newValue;
             Settings.System.putString(getContentResolver(),
