@@ -21,6 +21,12 @@
     android:title="@string/notification_category" >
 
     <Preference
+        android:key="heads_up"
+        android:title="@string/headsup_category"
+        android:summary="@string/headsup_summary"
+        android:fragment="com.derpquest.settings.notification.HeadsUp" />
+
+    <Preference
         android:key="charging_light"
         android:title="@string/battery_light_settings"
         android:summary="@string/battery_light_summary"
@@ -32,25 +38,6 @@
         android:entries="@array/flashlight_on_call_entries"
         android:entryValues="@array/flashlight_on_call_values"
         android:defaultValue="0" />
-
-    <com.derp.support.preference.SystemSettingSwitchPreference
-        android:key="less_boring_heads_up"
-        android:title="@string/less_boring_heads_up_title"
-        android:summary="@string/less_boring_heads_up_summary"
-        android:defaultValue="false" />
-
-    <com.derp.support.preference.SystemSettingSwitchPreference
-        android:key="show_media_heads_up"
-        android:title="@string/show_media_heads_up_title"
-        android:summary="@string/show_media_heads_up_summary"
-        android:defaultValue="false" />
-
-    <ListPreference
-        android:key="heads_up_snooze_time"
-        android:title="@string/heads_up_snooze_title"
-        android:entries="@array/heads_up_snooze_entries"
-        android:entryValues="@array/heads_up_snooze_values"
-        android:persistent="false" />
 
     <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="notification_headers"
