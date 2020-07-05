@@ -551,10 +551,6 @@
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
 
-    <!-- Bluetooth battery status --> 
-    <string name="bluetooth_battery_title">Bluetooth battery status</string>
-    <string name="bluetooth_battery_summary">Display battery level for the connected bluetooth device, if available</string>
-
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Enable scaling</string>
     <string name="aspect_ratio_apps_enabled_summary">Allow legacy apps to use full screen</string>

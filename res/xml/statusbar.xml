@@ -67,12 +67,6 @@
             android:dependency="status_bar_logo"
             android:title="@string/status_bar_logo_style_title" />
 
-        <com.derp.support.preference.SystemSettingSwitchPreference
-            android:key="bluetooth_show_battery"
-            android:title="@string/bluetooth_battery_title"
-            android:summary="@string/bluetooth_battery_summary"
-            android:defaultValue="true"/>
-
          <com.derp.support.preference.SystemSettingSwitchPreference
             android:key="statusbar_privacy_indicators"
             android:title="@string/statusbar_privacy_indicators_title"
