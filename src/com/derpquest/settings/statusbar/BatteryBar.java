@@ -107,6 +107,7 @@ public class BatteryBar extends SettingsPreferenceFragment implements Preference
         mBatteryBarColor.setNewPreviewColor(intColor);
         mBatteryBarColor.setSummary(hexColor);
         mBatteryBarColor.setOnPreferenceChangeListener(this);
+        mBatteryBarColor.setIconSpaceReserved(true);
 
         mBatteryBarChargingColor = (ColorPickerPreference) prefSet.findPreference(PREF_BATT_BAR_CHARGING_COLOR);
         intColor = Settings.System.getInt(resolver,
@@ -115,6 +116,7 @@ public class BatteryBar extends SettingsPreferenceFragment implements Preference
         mBatteryBarChargingColor.setNewPreviewColor(intColor);
         mBatteryBarChargingColor.setSummary(hexColor);
         mBatteryBarChargingColor.setOnPreferenceChangeListener(this);
+        mBatteryBarChargingColor.setIconSpaceReserved(true);
 
         mBatteryBarBatteryLowColorWarn = (ColorPickerPreference) prefSet.findPreference(PREF_BATT_BAR_LOW_COLOR_WARNING);
         intColor = Settings.System.getInt(resolver,
@@ -123,6 +125,7 @@ public class BatteryBar extends SettingsPreferenceFragment implements Preference
         mBatteryBarBatteryLowColorWarn.setNewPreviewColor(intColor);
         mBatteryBarBatteryLowColorWarn.setSummary(hexColor);
         mBatteryBarBatteryLowColorWarn.setOnPreferenceChangeListener(this);
+        mBatteryBarBatteryLowColorWarn.setIconSpaceReserved(true);
 
         mBatteryBarBatteryLowColor = (ColorPickerPreference) prefSet.findPreference(PREF_BATT_BAR_LOW_COLOR);
         intColor = Settings.System.getInt(resolver,
@@ -131,6 +134,7 @@ public class BatteryBar extends SettingsPreferenceFragment implements Preference
         mBatteryBarBatteryLowColor.setNewPreviewColor(intColor);
         mBatteryBarBatteryLowColor.setSummary(hexColor);
         mBatteryBarBatteryLowColor.setOnPreferenceChangeListener(this);
+        mBatteryBarBatteryLowColor.setIconSpaceReserved(true);
 
         mBatteryBarBatteryHighColor = (ColorPickerPreference) prefSet.findPreference(PREF_BATT_BAR_HIGH_COLOR);
         intColor = Settings.System.getInt(resolver,
@@ -139,6 +143,7 @@ public class BatteryBar extends SettingsPreferenceFragment implements Preference
         mBatteryBarBatteryHighColor.setNewPreviewColor(intColor);
         mBatteryBarBatteryHighColor.setSummary(hexColor);
         mBatteryBarBatteryHighColor.setOnPreferenceChangeListener(this);
+        mBatteryBarBatteryHighColor.setIconSpaceReserved(true);
 
         mBatteryBarUseGradient = (SwitchPreference) findPreference(PREF_BATT_BAR_USE_GRADIENT_COLOR);
         mBatteryBarUseGradient.setChecked(Settings.System.getInt(resolver,
