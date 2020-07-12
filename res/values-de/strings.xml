@@ -48,7 +48,7 @@
     <string name="choose_app">App auswählen</string>
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Neustart der SystemUI erforderlich</string>
-    <string name="systemui_restart_message">Um alle Änderungen anzuwenden ist ein Neustart von SystemUI notwendig. SystemUI jetzt neustarten?</string>
+    <string name="systemui_restart_message">Um alle Änderungen anzuwenden ist ein Neustart der SystemUI notwendig. SystemUI jetzt neustarten?</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Statusleiste</string>
     <string name="statusbar_bar_summary">Passe diverse Sachen an der Statusleiste an</string>
@@ -75,7 +75,10 @@
     <string name="volte_icon_volte">VoLTE-Symbol</string>
     <string name="volte_icon_oos">VoLTE OOS Symbol</string>
     <string name="volte_icon_hd">HD-Symbol</string>
-    <string name="volte_icon_volit">VoLTE-Symbol</string>
+    <string name="volte_icon_volit">VoLIT-Symbol</string>
+    <!-- Show VoWiFi icon -->
+    <string name="vowifi_switch_title">VoWiFi-Symbol</string>
+    <string name="vowifi_switch_summary">VoWiFi-Symbol anzeigen</string>
     <!-- Status bar clock and date options -->
     <string name="status_bar_style_title">Stil</string>
     <string name="status_bar_clock">Uhr und Datum</string>
@@ -136,12 +139,12 @@
     <string name="qs_battery_percentage_title">QS Batterieprozentsatz</string>
     <string name="qs_battery_percentage_summary">Den Batterieprozentsatz im QS-Header anstelle der Batterieschätzung anzeigen</string>
     <!-- Statusbar net monitor -->
-    <string name="net_monitor_category_title">Network monitor</string>
-    <string name="network_traffic_state_title">Enable network monitor</string>
-    <string name="network_traffic_state_sb_title">Always show net monitor</string>
-    <string name="network_traffic_state_summary">Show net download activity, or upload if bigger, in expanded statusbar</string>
-    <string name="network_traffic_state_sb_summary">Keep showing net activity also in normal statusbar</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="net_monitor_category_title">Netzwerkverkehrs-Anzeige</string>
+    <string name="network_traffic_state_title">Netzwerkverkehrs-Anzeige aktivieren</string>
+    <string name="network_traffic_state_sb_title">Netzwerkverkehrs-Anzeige immer anzeigen</string>
+    <string name="network_traffic_state_summary">Netzwerkverkehrs-Anzeige in der erweiterten Statusleiste anzeigen</string>
+    <string name="network_traffic_state_sb_summary">Zeigen Sie die Netzwerkverkehrs-Anzeige auch in der normalen Statusleiste an</string>
+    <string name="network_traffic_autohide_threshold_title">Schwellenwert für das automatische Ausblenden der Netzwerkverkehrs-Anzeige (KB/s)</string>
     <!-- DerpFest logo -->
     <string name="derp_logo_title">DerpFest Logo</string>
     <string name="derp_logo_summary">Wenn leute den Bildschrim sehen, lass alle wissen, dass du DerpFest nutzt</string>
@@ -162,8 +165,37 @@
     <string name="notification_summary">Passe das LED- und Benachrichtigungsverhalten an</string>
     <string name="notification_category">Benachrichtigungen</string>
     <string name="headsup_category">Heads-Up</string>
+    <string name="headsup_summary">Verschiedene Optionen zum Ändern der Funktionsweise von Heads Up</string>
+    <string name="add_heads_up_package">App hinzufügen</string>
+    <string name="add_heads_up_stoplist_summary">Heads-Up Benachrichtigungen in diesen Apps deaktivieren</string>
+    <string name="add_heads_up_blacklist_summary">Deaktiviere Pop-Up Benachrichtigungen von diesen Anwendungen</string>
+    <string name="heads_up_stoplist_title">Stoppliste</string>
+    <string name="heads_up_blacklist_title">Negativliste</string>
+    <string name="profile_choose_app">App auswählen</string>
+    <string name="dialog_delete_title">Löschen</string>
+    <string name="dialog_delete_message">Ausgewählten Eintrag löschen?</string>
+    <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">Medien als Heads-Up Benachrichtigung anzeigen</string>
     <string name="show_media_heads_up_summary">Medien als Heads-Up Benachrichtigung anzeigen, wenn ein neuer Track abgespielt ist, falls der Player nicht bereits im Vordergrund ist</string>
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Snooze-Timer</string>
+    <string name="heads_up_snooze_summary_one_minute">Durch das Hochwischen der Heads Up-Benachrichtigung werden alle Meldungen der entsprechenden Applikation für 1 Minute pausiert</string>
+    <string name="heads_up_snooze_summary">Durch das Hochwischen der Pop-Up Benachrichtigung, werden alle Meldungen der entsprechenden App für <xliff:g id="number">%d</xliff:g> Minuten pausiert</string>
+    <string name="heads_up_snooze_disabled_summary">Snooze-Timer ist deaktiviert</string>
+    <string name="heads_up_snooze_1min">1 Minute</string>
+    <string name="heads_up_snooze_5min">5 Minuten</string>
+    <string name="heads_up_snooze_10min">10 Minuten</string>
+    <string name="heads_up_snooze_15min">15 Minuten</string>
+    <string name="heads_up_snooze_20min">20 Minuten</string>
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Timeout</string>
+    <string name="heads_up_time_out_summary">Heads Up-Benachrichtigung werden für <xliff:g id="number">%d</xliff:g> Sekunden angezeigt</string>
+    <string name="heads_up_time_out_2sec">2 Sekunden</string>
+    <string name="heads_up_time_out_4sec">4 Sekunden</string>
+    <string name="heads_up_time_out_5sec">5 Sekunden</string>
+    <string name="heads_up_time_out_6sec">6 Sekunden</string>
+    <string name="heads_up_time_out_8sec">8 Sekunden</string>
+    <string name="heads_up_time_out_10sec">10 Sekunden</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">Bei Benachrichtigungen pulsieren</string>
     <string name="pulse_ambient_light_summary">Lichtimpuls bei neuer Benachrichtigung anzeigen</string>
@@ -202,6 +234,9 @@
     <string name="battery_light_medium_color">Mittlerer Akkustand</string>
     <string name="battery_light_full_color">Akku fast voll</string>
     <string name="battery_light_reallyfull_color">Akkustand voll</string>
+   <!-- R Notification headers -->
+    <string name="notification_headers_title">Kopfzeilen von Benachrichtigungen anzeigen</string>
+    <string name="notification_headers_summary">Zeigt die Kopfzeilen von Benachrichtigungen im Stil von Android \"R\" (erfordert Neustart der SystemUI)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Schnelleinstellungen</string>
     <string name="quicksettings_summary">Kacheln und erweiterte Statusleiste verwalten</string>
@@ -209,6 +244,54 @@
     <string name="brightness_slider_title">Helligkeitsregler</string>
     <string name="tiles_title">QS-Kacheln</string>
     <string name="qs_tile_footer">Um die Anzahl der QS Reihen und Spalten zu ändern, musst du die 3-Punkte-Menü Taste unter der QS-Bearbeitung benutzen.</string>
+    <!-- QS layout -->
+    <string name="qs_layout_title">QS-Layout</string>
+    <string name="qs_rows_portrait_title">Zeilen (Hochformat)</string>
+    <string name="qs_rows_landscape_title">Reihen (Querformat)</string>
+    <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
+    <string name="qs_columns_landscape_title">Spalten (Querformat)</string>
+    <!-- QS Battery Location -->
+    <string name="qs_battery_header_title">QS-Batteriestandort</string>
+    <string name="qs_battery_off">Deaktiviert</string>
+    <string name="qs_battery_on_signal">QS-Signalgruppe</string>
+    <string name="qs_battery_on_header">QS-Kopfzeile</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Schnelles QS-Herunterziehen</string>
+    <string name="quick_pulldown_none">Deaktiviert</string>
+    <string name="quick_pulldown_right">Das Herunterziehen auf der rechten Seite öffnet die Schnelleinstellungen</string>
+    <string name="quick_pulldown_left">Das Herunterziehen auf der linken Seite öffnet die Schnelleinstellungen</string>
+    <!-- QuickSettings Panel Transparency -->
+    <string name="quick_settings_category">Schnelleinstellungen</string>
+    <string name="qs_panel_alpha_title">Transparenz der Schnelleinstellungen</string>
+    <string name="qs_panel_alpha_summary">Konfigurieren Sie die Deckkraft des Hintergrunds</string>
+    <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Animation der QS-Kacheln</string>
+    <string name="qs_tile_animation_style_title">Animation der QS-Kacheln</string>
+    <string name="qs_tile_animation_duration_title">Animationsdauer der QS-Kacheln</string>
+    <string name="qs_tile_animation_style_off">Keine Animation</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotieren</string>
+    <string name="qs_tile_animation_duration_low">Langsam</string>
+    <string name="qs_tile_animation_duration_default">Standard</string>
+    <string name="qs_tile_animation_duration_fast">Schnell</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_tile_animation_interpolator_title">QS-Kacheln-Animation Interpolator</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Beschleunigen</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Verlangsamen</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Beschleunigen Verlangsamen</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Überschwingen</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Ausholen</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Ausholen - Überschwingen</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- QS visibility -->
+    <string name="qs_tile_title_visibility_title">Kachelbeschriftung</string>
+    <string name="qs_tile_title_visibility_summary">Bezeichnung unter jeder Kachel anzeigen</string>
+    <!-- QS Blur -->
+    <string name="qs_blur_title">QS-Unschärfe</string>
+    <string name="qs_blur_summary">Verwischen Sie den Bereich des QS-Bedienfelds hinter den Benachrichtigungen</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_category_title">Optionen für den Helligkeitsregler</string>
     <string name="qs_show_brightness_title">Helligkeitsregler</string>
@@ -384,11 +467,6 @@
     <string name="advanced_title">Erweiterte Einstellungen</string>
     <string name="advanced_summary">Verschiedene und zusätzliche Systemeinstellungen</string>
     <string name="system_category">Systemeinstellungen</string>
-    <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Skalierung aktivieren</string>
     <string name="aspect_ratio_apps_enabled_summary">Erlaube alten Apps den Vollbildmodus zu verwenden</string>
@@ -400,9 +478,109 @@
     <!-- Category titles -->
     <string name="lockscreen_clock_category_title">Uhr- und Datumsoptionen</string>
     <!-- Rounded corners -->
-    <string name="corners_category">Corners</string>
-    <string name="corner_radius">Rounded corner radius</string>
-    <string name="content_padding">Corner content padding</string>
-    <string name="corner_fwvals">Use framework values</string>
-    <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
+    <string name="corners_category">Ecken</string>
+    <string name="corner_radius">Radius der abgerundenten Ecken</string>
+    <string name="content_padding">Abstand zum Inhalt</string>
+    <string name="corner_fwvals">Benutze Framework-Werte</string>
+    <string name="corner_fwvals_summary">Nützlich, wenn das Gerät abgerundete Ecken hat</string>
+    <!-- Custom headers -->
+    <string name="status_bar_custom_header_title">Benutzerdefiniertes Header-Bild</string>
+    <string name="daylight_header_pack_title">Header-Bildersammlung</string>
+    <string name="status_bar_custom_header_shadow_title">Header-Bildschatten</string>
+    <string name="status_bar_custom_header_shadow_summary">Für bessere Sichtbarkeit auf hellen Bildern</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Statisches Bild </string>
+    <string name="daylight_header_provider_title">Bildersammlung</string>
+    <string name="custom_header_provider_title">Header-Anbieter</string>
+    <string name="custom_header_pick_title">Headerbild auswählen</string>
+    <string name="custom_header_pick_summary">Wähle ein lokales oder externes Bild</string>
+    <string name="style_enabled_summary">Benutzerdefiniertes Headerbild ist aktiviert</string>
+    <string name="style_disabled_summary">Benutzerdefiniertes Headerbild ist deaktiviert</string>
+    <string name="header_provider_disabled">Deaktiviert</string>
+    <string name="custom_header_title">Benutzerdefiniertes Headerbild</string>
+    <string name="file_header_select_title">Lokales Bild auswählen</string>
+    <string name="file_header_select_summary">Wählen Sie ein Bild aus dem Speicher</string>
+    <string name="file_header_provider_title">Einzel Bild</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Akku-Leiste</string>
+    <string name="battery_bar_summary">Akkuleiste anpassen</string>
+    <string name="battery_bar_location">Position</string>
+    <string name="battery_bar_color">Farbe</string>
+    <string name="battery_bar_charging_color">Farbe beim Ladevorgang</string>
+    <string name="battery_bar_battery_low_color">Farbe bei niedrigem Akkustand</string>
+    <string name="battery_bar_style_title">Stil</string>
+    <string name="battery_bar_thickness_title">Stärke</string>
+    <string name="battery_bar_thickness_summary">%1$s</string>
+    <string name="battery_bar_animate_title">Ladeanimation</string>
+    <string name="battery_bar_animate_summary">Animiert die Akkuleiste während des Ladevorgangs</string>
+    <string name="battery_bar_hide">Nicht anzeigen</string>
+    <string name="battery_bar_statusbar">Statusleiste</string>
+    <string name="battery_bar_topnav">Über der Navigationsleiste</string>
+    <string name="battery_bar_bottomnav">Unterhalb der Navigationsleiste</string>
+    <string name="battery_bar_reg">Normal</string>
+    <string name="battery_bar_center">Mittig gespiegelt</string>
+    <string name="battery_bar_reversed">Umgekehrt</string>
+    <string name="battery_bar_use_gradient_color">Farbverlauf verwenden</string>
+    <string name="battery_bar_gradient_color_summary">Verwende Farbverlauf als Maßstab für den Akkustand</string>
+    <string name="battery_bar_high_color">Farbe bei hohem Akkustand</string>
+    <string name="battery_bar_low_color">Farbe bei niedrigem Akkustand</string>
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">LED-Blinklicht bei eingehenden Anrufen</string>
+    <string name="flashlight_on_call_disabled">Deaktiviert</string>
+    <string name="flashlight_on_call_not_dnd">Nur im lauten Modus</string>
+    <string name="flashlight_on_call_dnd">Nur im DND-Modus</string>
+    <string name="flashlight_on_call_always">Immer</string>
+    <!-- Powermenu background filters -->
+    <string name="power_menu_bg_filter_none">Kein</string>
+    <string name="power_menu_bg_filter_grayscale">Graustufen</string>
+    <string name="power_menu_bg_filter_tint">Akzent gefärbt</string>
+    <string name="power_menu_bg_filter_blur">Verschwommen</string>
+    <string name="power_menu_bg_filter_grayblur">Graustufen und verschwommen</string>
+    <string name="power_menu_bg_filter_tinted_blur">Akzent gefärbt and verschwommen</string>
+    <!-- Powermunu Background -->
+    <string name="power_menu_bg_title">Hintergrundfilter</string>
+    <string name="power_menu_bg_summary">Aktiviert den benutzerdefinierten Filter, wenn das Powermenü aktiv ist</string>
+    <string name="power_menu_bg_style_title">Filtertypen</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="music_options">Musik-Optionen</string>
+    <string name="headset_connect_player_title">Musik-App Bei Kopfhöreranschluß starten</string>
+    <string name="headset_connect_player_summary">Beim Verbinden eines Kopfhörers die Standard-Musik-App starten</string>
+    <!-- Headset ringtone audio focus -->
+    <string name="ringtone_focus_mode_title">Audiowiedergabe des Klingeltons</string>
+    <string name="ringtone_focus_mode_dynamic">Nur im Kopfhörer, wenn Musik abgespielt wird</string>
+    <string name="ringtone_focus_mode_stock">Sowohl Lautsprecher als auch Kopfhörer</string>
+   <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Pop-Up Nachrichten einschränken</string>
+    <string name="less_boring_heads_up_summary">Zeige Pop-Up Benachrichtigungen nur für Telefon, Wecker und SMS-App</string>
+    <!-- Transparent lockscreen notifications -->
+    <string name="transparent_lockscreen_notification_title">Transparente Benachrichtigungen</string>
+    <string name="transparent_lockscreen_notification_summary">Aktivieren Sie Benachrichtigungen mit halbtransparentem Hintergrund auf dem Sperrbildschirm</string>
+    <!-- USB Configuration -->
+    <string name="usb_default_config_title">USB Konfiguration</string>
+    <string name="usb_default_config_summary">Wählen Sie das Standardverhalten, wenn Sie über USB mit einem Gerät verbunden sind</string>
+    <!-- Volume Steps Fragment -->
+    <string name="volume_button_category_title">Lautstärkestufen</string>
+    <string name="volume_steps_fragment_title">Lautstärkestufen</string>
+    <string name="volume_steps_summary">Legen Sie eine benutzerdefinierte Anzahl von Lautstärkestufen fest</string>
+    <string name="volume_steps_alarm_title">Lautstärkestufen: Wecker</string>
+    <string name="volume_steps_dtmf_title">Lautstärkestufen: DTMF</string>
+    <string name="volume_steps_music_title">Lautstärkestufen: Musik</string>
+    <string name="volume_steps_notification_title">Lautstärkestufen: Benachrichtigung</string>
+    <string name="volume_steps_ring_title">Lautstärkestufen: Klingelton</string>
+    <string name="volume_steps_system_title">Lautstärkestufen: System</string>
+    <string name="volume_steps_voice_call_title">Lautstärkestufen: Sprachanruf</string>
+    <string name="volume_steps_reset">Zurücksetzen</string>
+    <!-- QS statusbar background -->
+    <string name="qs_header_background_title">Hintergrund der Statusleiste</string>
+    <string name="qs_header_background_black">Schwarz</string>
+    <string name="qs_header_background_transparent">Transparent</string>
+    <!-- Statusbar ticker -->
+    <string name="statusbar_notifi_cat">Benachrichtigungsticker</string>
+    <string name="status_bar_ticker_title">Ticker</string>
+    <string name="status_bar_show_ticker_title">Ticker</string>
+    <string name="status_bar_show_ticker_summary">Benachrichtigungsvorschau in der Statusleiste</string>
+    <string name="ticker_animation_mode_title">Ticker-Animation</string>
+    <string name="ticker_animation_mode_alpha_fade">Verblassen</string>
+    <string name="ticker_animation_mode_scroll">Scrollen</string>
+    <string name="ticker_tick_duration_title">Tickerdauer</string>
 </resources>
