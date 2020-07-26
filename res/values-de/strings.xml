@@ -552,9 +552,6 @@
    <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Pop-Up Nachrichten einschränken</string>
     <string name="less_boring_heads_up_summary">Zeige Pop-Up Benachrichtigungen nur für Telefon, Wecker und SMS-App</string>
-    <!-- Transparent lockscreen notifications -->
-    <string name="transparent_lockscreen_notification_title">Transparente Benachrichtigungen</string>
-    <string name="transparent_lockscreen_notification_summary">Aktivieren Sie Benachrichtigungen mit halbtransparentem Hintergrund auf dem Sperrbildschirm</string>
     <!-- USB Configuration -->
     <string name="usb_default_config_title">USB Konfiguration</string>
     <string name="usb_default_config_summary">Wählen Sie das Standardverhalten, wenn Sie über USB mit einem Gerät verbunden sind</string>
