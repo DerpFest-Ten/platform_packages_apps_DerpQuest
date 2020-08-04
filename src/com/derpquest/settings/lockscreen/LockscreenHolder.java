@@ -18,7 +18,6 @@ package com.derpquest.settings.lockscreen;
 
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.ServiceManager;
@@ -106,11 +105,6 @@ public class LockscreenHolder extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
-    }
-
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        LockScreenVisualizer.reset(mContext);
     }
 
     /**

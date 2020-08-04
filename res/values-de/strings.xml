@@ -447,22 +447,6 @@
     <!-- Power menu on secure lockscreen -->
     <string name="lockscreen_enable_power_menu_title">Power-Menü</string>
     <string name="lockscreen_enable_power_menu_summary">Erlaube Zugriff auf das Power-Menü im Sperrbildschirm</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Visualisieren</string>
-    <string name="lockscreen_visualizer_summary">Musik-Visualizer anzeigen, wenn verfügbar</string>
-    <string name="lockscreen_autocolor_title">Automatische Farbauswahl</string>
-    <string name="lockscreen_autocolor_summary">Farbe mit Hintergrund synchronisieren</string>
-    <string name="lockscreen_autocolor_lavalamp">Erfordert, dass die Lavalampe deaktiviert ist</string>
-    <string name="lockscreen_lavalamp_title">Lavalampe</string>
-    <string name="lockscreen_lavalamp_summary">Animiert einen seichten Lavalampeneffekt bei der Farbgebung</string>
-    <string name="lockscreen_lavalamp_speed_title">Farbblendintervall der Lavalampe</string>
-    <string name="lockscreen_solid_units_count_title">Anzahl durchgezogener Balken</string>
-    <string name="lockscreen_solid_fudge_factor_title">Reaktionsgeschwindigkeit</string>
-    <string name="lockscreen_solid_units_opacity_title">Undurchsichtigkeit der durchgezogenen Linien</string>
-    <string name="unit_milliseconds">ms</string>
-    <!-- Ambient visualizer -->
-    <string name="ambient_visualizer_title">Musiktitelanzeige im Ambient-Display</string>
-    <string name="ambient_visualizer_summary">Zeigt die Visualisierungsbalken auch auf dem Ambient Display (weniger intensiv)</string>
     <!--Owlsnest advanced-->
     <string name="advanced_title">Erweiterte Einstellungen</string>
     <string name="advanced_summary">Verschiedene und zusätzliche Systemeinstellungen</string>
